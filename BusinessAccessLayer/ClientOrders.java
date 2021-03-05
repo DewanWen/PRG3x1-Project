@@ -34,7 +34,7 @@ public class ClientOrders
         return "ClientOrders [bookNum=" + bookNum + ", bookStatus=" + bookStatus + "]";
     }
 
-    public static void UpdateMenu()
+    public static void UpdateMenu()// change only menu item for centain record of client
     {
         
     }
