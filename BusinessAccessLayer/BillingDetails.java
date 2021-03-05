@@ -82,3 +82,7 @@ public class BillingDetails
                 + bankName + ", branchCode=" + branchCode + ", city=" + city + ", zipCode=" + zipCode + "]";
     }
 }
+/*
+I placed all things that had to do with billing information into a single class
+
+*/ 
