@@ -36,4 +36,12 @@ public class notification
     public void setReceipt(String receipt) {
         this.receipt = receipt;
     }
+
+    @Override
+    public String toString() {
+        return "notification [bookingStatus=" + bookingStatus + ", changeMade=" + changeMade + "]\n"+" [receipt=" + receipt
+                + "]";
+    }
+
+    
 }

@@ -10,11 +10,25 @@ public class bookings
     private Date eventDate;
     private Integer bookNum;
     private String clientName;
+    private Double balance;
     
-    public bookings(String status, Date eventDate, Integer bookNum, String clientName) {
-        this.status = status;
+    public bookings(Date eventDate, Integer bookNum, String clientName, Double balance) {
+        this.status = "Booked";// booked by default when created
         this.eventDate = eventDate;
         this.bookNum = bookNum;
+        this.clientName = clientName;
+        this.setBalance(balance);
+    }
+    public Double getBalance() {
+        return balance;
+    }
+    public void setBalance(Double balance) {
+        this.balance = balance;
+    }
+    public String getClientName() {
+        return clientName;
+    }
+    public void setClientName(String clientName) {
         this.clientName = clientName;
     }
     public Integer getBookNum() {
@@ -51,10 +65,5 @@ public class bookings
           //  }
         }
     }
-    private static Object getBookings() 
-    {
-
-        // get data from stored source
-        return null;
-    }
+    
 }

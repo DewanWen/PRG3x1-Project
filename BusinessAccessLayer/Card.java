@@ -1,13 +1,13 @@
 package PRG3x1_Project.BusinessAccessLayer;
 
 
-public class CreditCard extends payment
+public class Card extends payment
 {
     private String cardType;
     private String expMonth;
     private String expYear;
 
-    public CreditCard(String cardType, String expMonth, String expYear) {
+    public Card(String cardType, String expMonth, String expYear) {
         this.cardType = cardType;
         this.expMonth = expMonth;
         this.expYear = expYear;
@@ -40,7 +40,8 @@ public class CreditCard extends payment
     @Override
     public void pay(double amount, double balance) 
     {
-        
+        notification payConfirm = new notification("Payment", "", "");
+
     }
 
     

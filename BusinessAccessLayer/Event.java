@@ -3,14 +3,17 @@ package PRG3x1_Project.BusinessAccessLayer;
 import java.sql.Date;
 import java.sql.Time;
 
-public class Event
+public abstract class Event
 {
-    private String typeEvent;
-    private int adults; // amount adults and kids
-    private int kids;
-    private Date date; // date and time of event. Date in dd/mm/yy format.
-    private Time time; // Time in 24hour format
-    private String venue; // Address and city
-    private String theme; // Event theme eg. Pirates, Forest folk, Under The Sea
+    String typeEvent;
+    int adults; // amount adults and kids
+    int kids;
+    int attendance;
+    String date; // date and time of event. Date in dd/mm/yy format.
+    String time; // Time in 24hour format
+    String venue; // Address and city
+    String theme; // Event theme eg. Pirates, Forest folk, Under The Sea
 
+    //add a and b to get the capacity of the event
+    public abstract Integer totalNumber(Integer a, Integer b);
 }
