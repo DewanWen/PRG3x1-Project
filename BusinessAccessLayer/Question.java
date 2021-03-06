@@ -26,24 +26,22 @@ public class Question extends Event
         Scanner sn = new Scanner(System.in);
 
         System.out.println("\n-----------------------------------------\n");
-        int input = sn.nextInt(); 
+        int input = sn.nextInt(); // to
         switch (input) {
-            case 1:
+            case 1:    // Wedding
                 
                 break;
-            case 2:
+            case 2:     //BusinessFinction
                 
                 break;
-            case 3:
+            case 3:     //Birthday
                 
                 break;
-            case 4:
+            case 4:     //Baptism
                 
                 break;
-            case 5:
+            case 5:     //Other
                 
-                break;
-            default:
                 break;
         }
         // date
