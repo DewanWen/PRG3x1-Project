@@ -1,5 +1,7 @@
+package PRG3x1_Project.BusinessAccessLayer;
 
-public class CreditCard 
+
+public class CreditCard extends payment
 {
     private String cardType;
     private String expMonth;
@@ -34,4 +36,12 @@ public class CreditCard
     public void setExpYear(String expYear) {
         this.expYear = expYear;
     }
+
+    @Override
+    public void pay(double amount, double balance) 
+    {
+        
+    }
+
+    
 }

@@ -1,6 +1,5 @@
-/**
- * Client
- */
+package PRG3x1_Project.BusinessAccessLayer;
+
 public class Client 
 {
     private String fName;

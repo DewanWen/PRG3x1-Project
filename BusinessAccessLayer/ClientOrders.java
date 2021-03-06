@@ -1,6 +1,5 @@
-/**
- * ClientOrders
- */
+package PRG3x1_Project.BusinessAccessLayer;
+
 public class ClientOrders 
 {
     private Integer bookNum ;
@@ -34,10 +33,7 @@ public class ClientOrders
         return "ClientOrders [bookNum=" + bookNum + ", bookStatus=" + bookStatus + "]";
     }
 
-    public static void UpdateMenu()// change only menu item for centain record of client
-    {
-        
-    }
+    
 
     
 }
