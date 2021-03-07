@@ -1,6 +1,6 @@
 package PRG3x1_Project.BusinessAccessLayer;
 
-import java.util.ArrayList;
+import java.util.ArrayList;                 
 import java.util.List;
 
 public class BillingDetails implements getdata
@@ -13,7 +13,8 @@ public class BillingDetails implements getdata
     private String branchCode;
     private String bankName;
 
-    List<BillingDetails> billList = new ArrayList<>(getData());
+    List<BillingDetails> billList = new ArrayList<>(getData()); // to call list to other classes
+    
     public BillingDetails(String accNum, String accOwner, String address, String zipCode, String city,
             String branchCode, String bankName) {
         this.accNum = accNum;

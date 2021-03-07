@@ -12,7 +12,8 @@ public class bookings implements getdata
     private String clientName;
     private Double balance;
     
-    List<bookings> allBookings = new ArrayList<>();
+    List<bookings> allBookings = new ArrayList<>(getData()); // to call list to other classes
+   
     public bookings(String eventDate, Integer bookNum, String clientName, Double balance) {
         this.status = "Booked";// booked by default when created
         this.eventDate = eventDate;
@@ -58,15 +59,15 @@ public class bookings implements getdata
     
     public static void Update(Integer bookNumUp)// change only for centain record of client, Done by admin/Miss Rachel
     {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);                    // Gets data
         List<bookings> userBook = new ArrayList<>();
         Integer count = 0;
-        while (!count.equals(userBook.size())) 
+        while (!count.equals(userBook.size()))   // find maching booknum
         {
 
             count++;
         }
-        System.out.println("1.Payment recieved \n"+"2.Menu change"+"3.Cancel event");
+        System.out.println("1.Payment recieved \n"+"2.Menu change"+"3.Cancel event"); 
         int input = sc.nextInt();
             switch (input) 
             {

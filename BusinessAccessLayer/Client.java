@@ -11,7 +11,10 @@ public class Client implements getdata
     private String cEmail;
     private String pword;
 
-    List<Client> allClients = new ArrayList<>(getData());
+
+    List<Client> allClients = new ArrayList<>(getData()); // to call list to other classes
+    
+    
     public Client(String fName, String lName, String phoneNum, String cEmail, String pword) {
         this.fName = fName;
         this.lName = lName;

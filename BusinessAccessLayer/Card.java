@@ -45,7 +45,7 @@ public class Card extends payment
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Desired Amount to pay. (numbers only with ',' seperating Rand and cent)");
         double amount = sc.nextDouble();
-        double balance = bookings.getBalance();
+        double balance = bookings.getBalance();  // Get balance from clients record
         receipt slip = new receipt();
         
         if (amount >=(0.5*balance)) 
