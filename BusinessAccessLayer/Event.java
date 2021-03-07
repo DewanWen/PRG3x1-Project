@@ -1,5 +1,8 @@
 package PRG3x1_Project.BusinessAccessLayer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Event
 {
     String typeEvent;
@@ -10,7 +13,7 @@ public abstract class Event
     String time; // Time in 24hour format
     String venue; // Address and city
     String theme; // Event theme eg. Pirates, Forest folk, Under The Sea
-
+    List<Event> allEvents = new ArrayList<>(getData());
     //add a and b to get the capacity of the event
     public abstract Integer totalNumber(Integer a, Integer b);
 
@@ -29,4 +32,10 @@ public abstract class Event
         this.theme = theme;
     }
 
+    public List<Event> getData() {
+        List<Event> eList = new ArrayList<>();
+
+        // get data from acces layer
+        return eList;
+    }
 }

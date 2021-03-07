@@ -83,11 +83,11 @@ public class bookings implements getdata
                     break;
             }
     }
-    @Override
-    public
-    void getData() {
-        // Fetch data for bookings and place in list allBookings
-        
+    public List<bookings> getData() {
+        List<bookings> bookList = new ArrayList<>();
+
+        // get data from acces layer
+        return bookList;
     }
     
     

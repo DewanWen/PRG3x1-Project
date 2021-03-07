@@ -1,5 +1,8 @@
 package PRG3x1_Project.BusinessAccessLayer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BillingDetails implements getdata
 {
     private String accNum;
@@ -10,6 +13,7 @@ public class BillingDetails implements getdata
     private String branchCode;
     private String bankName;
 
+    List<BillingDetails> billList = new ArrayList<>(getData());
     public BillingDetails(String accNum, String accOwner, String address, String zipCode, String city,
             String branchCode, String bankName) {
         this.accNum = accNum;
@@ -83,10 +87,11 @@ public class BillingDetails implements getdata
                 + bankName + ", branchCode=" + branchCode + ", city=" + city + ", zipCode=" + zipCode + "]";
     }
 
-    @Override
-    public void getData() {
-        // TODO Auto-generated method stub
-        
+    public List<BillingDetails> getData() {
+        List<BillingDetails> bills = new ArrayList<>();
+
+        // get data from acces layer
+        return bills;
     }
 }
 /*

@@ -1,5 +1,8 @@
 package PRG3x1_Project.BusinessAccessLayer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Client implements getdata
 {
     private String fName;
@@ -8,6 +11,7 @@ public class Client implements getdata
     private String cEmail;
     private String pword;
 
+    List<Client> allClients = new ArrayList<>(getData());
     public Client(String fName, String lName, String phoneNum, String cEmail, String pword) {
         this.fName = fName;
         this.lName = lName;
@@ -61,11 +65,11 @@ public class Client implements getdata
         return "Client [fName=" + fName + ", lName=" + lName + ", phoneNum=" + phoneNum + "cEmail=" + cEmail + "]";
     }
 
-    @Override
-    public
-    void getData() {
-        // TODO Auto-generated method stub
-        
+    public List<Client> getData() {
+        List<Client> cList = new ArrayList<>();
+
+        // get data from acces layer
+        return cList;
     }
 
     
