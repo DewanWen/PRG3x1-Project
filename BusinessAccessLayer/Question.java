@@ -5,19 +5,16 @@ import java.util.Scanner;
 public class Question extends Event
 {
 
+    public Question() {
+        
+    }
     enum EventType
     {
         Wedding, BusinessFinction, Birthday, Baptism, Other;
     }
-
-    @Override
-    public Integer totalNumber(Integer a, Integer b) {
-
-        // We need toknow the number of kids and adults for catering purposes
-        this.adults = a;
-        this.kids = b;
-
-        return attendance = adults + kids;
+    public void run()
+    {
+        questions();
     }
     public void questions() {
     // calculations class instant here
@@ -84,5 +81,15 @@ public class Question extends Event
         System.out.println(ca.charges(adults, kids));
 
         System.out.println("\n-----------------------------------------\n");
+    
+    }
+    @Override
+    public Integer totalNumber(Integer a, Integer b) {
+
+        // We need toknow the number of kids and adults for catering purposes
+        this.adults = a;
+        this.kids = b;
+
+        return attendance = adults + kids;
     }
 }

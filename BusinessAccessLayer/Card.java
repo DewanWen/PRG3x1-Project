@@ -1,5 +1,6 @@
 package PRG3x1_Project.BusinessAccessLayer;
 
+import java.util.Scanner;
 
 public class Card extends payment
 {
@@ -40,8 +41,12 @@ public class Card extends payment
     @Override
     public void pay(double amount, double balance) 
     {
+        Scanner sc = new Scanner(System.in);
         notification payConfirm = new notification("Payment", "", "");
-
+        if (amount >=(0.5*balance)) 
+        {
+            bookings.Update(sc.nextInt());
+        }
     }
 
     

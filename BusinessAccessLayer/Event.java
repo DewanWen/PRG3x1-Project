@@ -1,8 +1,5 @@
 package PRG3x1_Project.BusinessAccessLayer;
 
-import java.sql.Date;
-import java.sql.Time;
-
 public abstract class Event
 {
     String typeEvent;
@@ -16,4 +13,5 @@ public abstract class Event
 
     //add a and b to get the capacity of the event
     public abstract Integer totalNumber(Integer a, Integer b);
+
 }

@@ -1,6 +1,6 @@
 package PRG3x1_Project.BusinessAccessLayer;
 
-public class BillingDetails 
+public class BillingDetails implements getdata
 {
     private String accNum;
     private String accOwner;
@@ -81,6 +81,12 @@ public class BillingDetails
     public String toString() {
         return "BillingDetails [accNum=" + accNum + ", accOwner=" + accOwner + ", address=" + address + ", bankName="
                 + bankName + ", branchCode=" + branchCode + ", city=" + city + ", zipCode=" + zipCode + "]";
+    }
+
+    @Override
+    public void getData() {
+        // TODO Auto-generated method stub
+        
     }
 }
 /*
