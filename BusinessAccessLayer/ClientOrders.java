@@ -1,6 +1,6 @@
 package PRG3x1_Project.BusinessAccessLayer;
 
-public class ClientOrders 
+public class ClientOrders implements getdata
 {
     private Integer bookNum ;
     private String bookStatus;
@@ -31,6 +31,13 @@ public class ClientOrders
     @Override
     public String toString() {
         return "ClientOrders [bookNum=" + bookNum + ", bookStatus=" + bookStatus + "]";
+    }
+
+    @Override
+    public
+    void getData() {
+        // TODO Auto-generated method stub
+        
     }
 
     

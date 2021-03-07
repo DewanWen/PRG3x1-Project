@@ -1,6 +1,6 @@
 package PRG3x1_Project.BusinessAccessLayer;
 
-public class Client 
+public class Client implements getdata
 {
     private String fName;
     private String lName;
@@ -59,6 +59,13 @@ public class Client
     @Override
     public String toString() {
         return "Client [fName=" + fName + ", lName=" + lName + ", phoneNum=" + phoneNum + "cEmail=" + cEmail + "]";
+    }
+
+    @Override
+    public
+    void getData() {
+        // TODO Auto-generated method stub
+        
     }
 
     

@@ -29,19 +29,19 @@ public class Question extends Event
         int input = sn.nextInt(); // to
         switch (input) {
             case 1:    // Wedding
-                
+                typeEvent = "Wedding";
                 break;
             case 2:     //BusinessFinction
-                
+                typeEvent = "BusinessFinction";
                 break;
             case 3:     //Birthday
-                
+                typeEvent = "Birthday";
                 break;
             case 4:     //Baptism
-                
+                typeEvent = "Baptism";
                 break;
             case 5:     //Other
-                
+                typeEvent = "Other";
                 break;
         }
         // date

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class bookings 
+public class bookings implements getdata
 {
     private String status;
     private Date eventDate;
@@ -65,5 +65,12 @@ public class bookings
           //  }
         }
     }
+    @Override
+    public
+    void getData() {
+        // TODO Auto-generated method stub
+        
+    }
+    
     
 }

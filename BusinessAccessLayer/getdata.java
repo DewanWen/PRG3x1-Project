@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import PRG3x1_Project.BusinessAccessLayer.bookings;
-public abstract class getdata 
-{
+public interface getdata {
     abstract void getData();
 }
