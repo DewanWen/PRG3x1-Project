@@ -16,7 +16,8 @@ public class calculations
 
     Double total = 0.0; //total <=> amount
 
-    public void pay(){
+    public void pay()
+    {
         System.out.println("Pay today in full and qualify for an additional 5% discount");
     }
 

@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Question extends Event
 {
 
-    public Question() {
-        
+    public Question() 
+    {
+
     }
     enum EventType
     {

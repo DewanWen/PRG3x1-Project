@@ -14,4 +14,19 @@ public abstract class Event
     //add a and b to get the capacity of the event
     public abstract Integer totalNumber(Integer a, Integer b);
 
+    public Event() {
+    }
+
+    public Event(String typeEvent, int adults, int kids, int attendance, String date, String time, String venue,
+            String theme) {
+        this.typeEvent = typeEvent;
+        this.adults = adults;
+        this.kids = kids;
+        this.attendance = attendance;
+        this.date = date;
+        this.time = time;
+        this.venue = venue;
+        this.theme = theme;
+    }
+
 }

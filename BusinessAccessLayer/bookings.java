@@ -1,7 +1,6 @@
 package PRG3x1_Project.BusinessAccessLayer;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -13,6 +12,7 @@ public class bookings implements getdata
     private String clientName;
     private Double balance;
     
+    List<bookings> allBookings = new ArrayList<>();
     public bookings(String eventDate, Integer bookNum, String clientName, Double balance) {
         this.status = "Booked";// booked by default when created
         this.eventDate = eventDate;
@@ -20,6 +20,7 @@ public class bookings implements getdata
         this.clientName = clientName;
         this.setBalance(balance);
     }
+    
     public Double getBalance() {
         return balance;
     }
@@ -62,26 +63,22 @@ public class bookings implements getdata
         Integer count = 0;
         while (!count.equals(userBook.size())) 
         {
-            
+
             count++;
         }
         System.out.println("1.Payment recieved \n"+"2.Menu change"+"3.Cancel event");
         int input = sc.nextInt();
             switch (input) 
             {
-                case 1:
+                case 1: // payment. Update balance and status
                     
                     break;
-                case 2:
+                case 2:// Food. Update menu
                     
                     break;
-                case 3:
+                case 3:// Cancel. delete event
                     
-                    break;
-                case 4:
-                    
-                    break;
-            
+                    break;           
                 default:
                     break;
             }
@@ -89,7 +86,7 @@ public class bookings implements getdata
     @Override
     public
     void getData() {
-        // TODO Auto-generated method stub
+        // Fetch data for bookings and place in list allBookings
         
     }
     

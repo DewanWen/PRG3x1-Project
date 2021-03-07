@@ -39,14 +39,20 @@ public class Card extends payment
     }
 
     @Override
-    public void pay(double amount, double balance) 
+    public void pay() 
     {
+        bookings bk = new bookings(bookings.getData());
         Scanner sc = new Scanner(System.in);
-        notification payConfirm = new notification("Payment", "", "");
+        System.out.println("Enter Desired Amount to pay. (numbers only with ',' seperating Rand and cent)");
+        double amount = sc.nextDouble();
+        double balance = bookings.getBalance();
+        receipt slip = new receipt();
+        
         if (amount >=(0.5*balance)) 
         {
             bookings.Update(sc.nextInt());
         }
+        notification payConfirm = new notification("Payment", bookings.getBookingStatus(), slip.PrintingTheReceipt());
     }
 
     
